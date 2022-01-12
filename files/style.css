@@ -143,15 +143,30 @@ body {
   min-height: 5em;
   text-align: right;
   padding-top: 1em;
-  padding-right: 1em;
+  padding-right: 0.5em;
+  position: relative;  
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .calcs {
+  padding-right: inherit;
+  scrollbar-width: none;
+  scroll-behavior: auto;
   height: 50%;
   font-size: 44px;
+  position: absolute top;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex; 
+  flex-direction: row-reverse;
+  
 }
-.results{
+.curr{
+  padding-right: inherit;
   height: 50%;
-  text-align: bottom;
+  position: absolute bottom;
+
 }
 
 
