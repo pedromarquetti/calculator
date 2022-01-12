@@ -66,14 +66,6 @@ ul {
 	list-style: none;
 }
 
-/* 
- * Completely resets form items
- * ----------------------------
- * Super hard reset that removes all borders
- * and radiuses of all form items (including
- * checkboxes and radios)
- */
-
 input,
 textarea,
 button {
@@ -87,16 +79,18 @@ button {
 	appearance: none;
 	text-align: left;
 }
-
+button:hover,
+button:active,
+button:focus {
+	outline: solid 2px black; /*  for non-webkit browsers */
+	outline: auto 5px -webkit-focus-ring-color; /*  for webkit browsers */
+}
 input:hover,
 input:active,
 input:focus,
 textarea:hover,
 textarea:active,
-textarea:focus,
-button:hover,
-button:active,
-button:focus {
+textarea:focus {
 	outline: none;
 }
 

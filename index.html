@@ -13,30 +13,30 @@
     <p>
       This component works exactly like the calculator you know. Click any number to start calculating!
     </p>
-    <div class="calculator">
+    <div  class="calculator">
       <div class="calculator__display__main">
-        <div class="calcs"></div>
-        <div class="curr"></div>
+        <div name='current formula' class="calcs"></div>
+        <div name='current results' class="curr"></div>
       </div>
       
-      <div class="calculator__keys">
-        <button class="key--operator" data-action="add">+</button>
-        <button class="key--operator" data-action="subtract">-</button>
-        <button class="key--operator" data-action="multiply">&times;</button>
-        <button class="key--operator" data-action="divide">÷</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>0</button>
-        <button data-action="decimal">.</button>
-        <button data-action="clear">AC</button>
-        <button class="key--equal" data-action="calculate">=</button>
+      <div tabindex='0' class="calculator__keys">
+        <button name='add' tabindex="0"  class="key--operator" data-action="add">+</button>
+        <button name='subtract' tabindex="0" class="key--operator" data-action="subtract">-</button>
+        <button name='multiply' tabindex="0" class="key--operator" data-action="multiply">&times;</button>
+        <button name='divide' tabindex="0" class="key--operator" data-action="divide">÷</button>
+        <button name='7' tabindex="0">7</button>
+        <button name='8' tabindex="0">8</button>
+        <button name='9' tabindex="0">9</button>
+        <button name='4' tabindex="0">4</button>
+        <button name='5' tabindex="0">5</button>
+        <button name='6' tabindex="0">6</button>
+        <button name='1' tabindex="0">1</button>
+        <button name='2' tabindex="0">2</button>
+        <button name='3' tabindex="0">3</button>
+        <button name='0' tabindex="0">0</button>
+        <button name='decimal' tabindex="0" data-action="decimal">.</button>
+        <button name='clear' tabindex="0" data-action="clear">AC</button>
+        <button name='calculate' tabindex="0" class="key--equal" data-action="calculate">=</button>
       </div>
     </div>
   </div>
